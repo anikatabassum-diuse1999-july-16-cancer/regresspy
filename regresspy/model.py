@@ -24,7 +24,7 @@ sto_chas_grad_rmse = rmse(sto_chas_grad_prediction, Y)
 print('Stochastic Gradient Descent Regressor RMSE value:', str(sto_chas_grad_rmse))
 
 # #TODO Perform a linear regression using your code and calculate training rmse.
-regression_value = Regression(epochs= 20, learning_rate= 0.0001)
+regression_value = Regression(epochs= 40, learning_rate= 0.001)
 regression_value.fit(X, Y)
 reg_pred = regression_value.predict(X)
 #print(reg_pred.shape)
